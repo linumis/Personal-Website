@@ -39,16 +39,18 @@ export default function Home() {
           FOOTER
           ======================================================== */}
       <footer className="px-6 py-8 border-t border-border">
-        <div className="max-w-[600px] mx-auto flex items-center justify-between">
-          <p className="text-sm text-muted">linusmichael.com</p>
-          <a
-            href="https://x.com/linumis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted hover:text-ink transition-colors duration-200"
-          >
-            @linumis
-          </a>
+        <div className="max-w-[600px] mx-auto">
+          <p className="text-sm text-muted">
+            linusmichael.com |{" "}
+            <a
+              href="https://x.com/linumis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ink transition-colors duration-200"
+            >
+              @linumis
+            </a>
+          </p>
         </div>
       </footer>
     </main>

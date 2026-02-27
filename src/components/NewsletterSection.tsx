@@ -23,17 +23,7 @@ export default function NewsletterSection() {
         No fluff.
       </p>
 
-      {/*
-        ================================================================
-        KIT FORM EMBED: replace this entire div with your Kit embed code
-        ================================================================
-        Example Kit embed looks like:
-          <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-          <form action="https://app.kit.com/forms/XXXXXXX/subscriptions" ...>
-            ...
-          </form>
-        ================================================================
-      */}
+      {/* KIT FORM EMBED: replace this div with your Kit embed code */}
       <div data-kit-form-placeholder>
         <KitFormPlaceholder />
       </div>
@@ -78,8 +68,8 @@ function KitFormPlaceholder() {
           text-sm font-semibold tracking-wide
           text-paper
           bg-accent
-          hover:bg-[#b34e25]
-          active:bg-[#9e4420]
+          hover:bg-[#b34018]
+          active:bg-[#9e3514]
           transition-colors duration-200
           rounded-none
           whitespace-nowrap
