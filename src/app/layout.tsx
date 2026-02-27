@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,13 +10,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Linus Michael",
-  description:
-    "Cabinetmaker. Builder. Teaching tradesmen to scale with AI.",
+  description: "Cabinet maker. AI builder. Building in public.",
   metadataBase: new URL("https://linusmichael.com"),
   openGraph: {
     title: "Linus Michael",
-    description:
-      "Cabinetmaker. Builder. Teaching tradesmen to scale with AI.",
+    description: "Cabinet maker. AI builder. Building in public.",
     url: "https://linusmichael.com",
     siteName: "Linus Michael",
     locale: "en_US",
@@ -31,8 +23,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Linus Michael",
-    description:
-      "Cabinetmaker. Builder. Teaching tradesmen to scale with AI.",
+    description: "Cabinet maker. AI builder. Building in public.",
+    creator: "@linumis",
   },
   icons: {
     icon: "/favicon.ico",
@@ -45,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="font-sans antialiased bg-parchment text-ink">
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans antialiased bg-paper text-ink">
         {children}
       </body>
     </html>

@@ -9,16 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        parchment: "#E8E3D5",
-        ink: "#1A1710",
-        accent: "#C4A882",
+        ink: "#0D0D0D",
+        paper: "#FFFFFF",
+        accent: "#C85A2A",
+        muted: "#6B6B6B",
+        border: "#E5E5E5",
       },
       fontFamily: {
-        serif: ["var(--font-playfair)", "Playfair Display", "serif"],
-        sans: ["var(--font-inter)", "Inter", "sans-serif"],
+        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
     },
   },
   plugins: [],
 };
+
 export default config;
